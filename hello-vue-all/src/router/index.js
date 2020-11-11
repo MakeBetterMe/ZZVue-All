@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import ZZVueRouter from '../vendors/ZZVueRouter'
 import Home from '../views/Home.vue'
 
-Vue.use(VueRouter)
+Vue.use(ZZVueRouter)
 
 const routes = [
   {
@@ -20,7 +20,7 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({
+const router = new ZZVueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
