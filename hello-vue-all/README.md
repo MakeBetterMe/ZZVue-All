@@ -1,4 +1,4 @@
-# hello-router
+# hello-vue-all
 
 ## Project setup
 ```
