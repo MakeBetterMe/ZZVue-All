@@ -21,7 +21,7 @@ const routes = [
 ]
 
 const router = new ZZVueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
