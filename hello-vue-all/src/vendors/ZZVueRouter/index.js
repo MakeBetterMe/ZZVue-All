@@ -13,7 +13,6 @@ export default class ZZVueRouter {
         // console.log(this)
         // console.log(this.$options.router)
         // console.log(this instanceof _Vue) === true this是Vue的一个实例
-
         if (this.$options.router) {
           _Vue.prototype.$router = this.$options.router
         }
@@ -88,5 +87,9 @@ export default class ZZVueRouter {
     })
   }
 
-  initEvents () { }
+  initEvents () {
+    window.addEventListener('popstate', () => {
+      this.data.current = window.location.pathname
+    })
+  }
 }
